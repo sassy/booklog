@@ -1,6 +1,25 @@
 
+$main-color: #fdffdd;
+
 body {
-    font-family: 'Noto Sans JP';
+    font-family: Lato, 'Noto Sans JP';
+    background-color: $main-color;
+}
+
+main {
+    margin: 30px auto;
+    max-width: 640px;
+    li {
+        list-style-type: none;
+        display: block;
+        margin: 30px auto;
+        padding: 10px;
+        background-color: #fff;
+        a {
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 h1#page_header {

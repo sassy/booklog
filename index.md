@@ -9,7 +9,10 @@ layout: default
 
 <ul>
 {% for post in site.posts %}
-    <li>{{post.date | date_to_long_string}} <br><a href="{{post.url | | absolute_url}}">{{ post.title }}</a></li>
+    <li>
+        <span>{{post.date | date_to_long_string}}</span> <br>
+        <a href="{{post.url | | absolute_url}}">{{ post.title }}</a>
+    </li>
 {% endfor %}
 </ul>
 
