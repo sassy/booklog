@@ -11,7 +11,7 @@ layout: default
 {% for post in site.posts %}
     <li>
         <span>{{post.date | date_to_long_string}}</span> <br>
-        <a href="{{post.url | | absolute_url}}">{{ post.title }}</a>
+        <a href="{{post.url | absolute_url}}">{{ post.title }}</a>
     </li>
 {% endfor %}
 </ul>
